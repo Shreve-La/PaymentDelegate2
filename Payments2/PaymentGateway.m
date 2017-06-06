@@ -14,8 +14,12 @@
 @implementation PaymentGateway
 
 -(void)processPaymentAmount:(NSString*)amount{
-    NSLog(@"Payment Processing Request Recieved, Sending to Delegate");
+    NSLog(@"Payment Processing Request Recieved");
+    if ([self.delegate canProcessPayment]){
     [self.delegate processPaymentAmount:(NSString*)amount];
+    }else{
+    NSLog(@"Sorry, we are unable to process you payment at this time");
+    }
 
 }
 

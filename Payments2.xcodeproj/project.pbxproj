@@ -13,6 +13,7 @@
 		ED449ED91EE70B350032047F /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED449ED81EE70B350032047F /* StripePaymentService.m */; };
 		ED449EDC1EE70B4C0032047F /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED449EDB1EE70B4C0032047F /* PaypalPaymentService.m */; };
 		ED449EDF1EE70B650032047F /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED449EDE1EE70B650032047F /* AmazonPaymentService.m */; };
+		ED449EE51EE7243F0032047F /* ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = ED449EE41EE7243F0032047F /* ApplePay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		ED449EDB1EE70B4C0032047F /* PaypalPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaypalPaymentService.m; sourceTree = "<group>"; };
 		ED449EDD1EE70B650032047F /* AmazonPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
 		ED449EDE1EE70B650032047F /* AmazonPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		ED449EE31EE7243F0032047F /* ApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePay.h; sourceTree = "<group>"; };
+		ED449EE41EE7243F0032047F /* ApplePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplePay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				ED449ECA1EE6FE6C0032047F /* main.m */,
 				ED449ED71EE70B350032047F /* StripePaymentService.h */,
 				ED449ED81EE70B350032047F /* StripePaymentService.m */,
+				ED449EE31EE7243F0032047F /* ApplePay.h */,
+				ED449EE41EE7243F0032047F /* ApplePay.m */,
 				ED449EDA1EE70B4C0032047F /* PaypalPaymentService.h */,
 				ED449EDB1EE70B4C0032047F /* PaypalPaymentService.m */,
 				ED449EDD1EE70B650032047F /* AmazonPaymentService.h */,
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED449EE51EE7243F0032047F /* ApplePay.m in Sources */,
 				ED449EDF1EE70B650032047F /* AmazonPaymentService.m in Sources */,
 				ED449ED61EE709D30032047F /* PaymentGateway.m in Sources */,
 				ED449ECB1EE6FE6C0032047F /* main.m in Sources */,

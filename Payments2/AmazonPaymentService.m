@@ -12,7 +12,10 @@
 
 -(void)processPaymentAmount:(NSString*)amount{
     NSLog(@"Amazon has processed a payment in the amount of: %@", amount);
-    
+}
+
+-(BOOL)canProcessPayment{
+    if (arc4random_uniform(2) == 1){return YES;}else{return NO;}
 }
 
 

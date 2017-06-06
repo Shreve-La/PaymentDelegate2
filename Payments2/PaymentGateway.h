@@ -12,6 +12,8 @@
 
 -(void)processPaymentAmount:(NSString*)amount;
 
+-(BOOL)canProcessPayment;
+
 @end
 
 
