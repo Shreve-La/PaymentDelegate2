@@ -9,5 +9,10 @@
 #import "PaypalPaymentService.h"
 
 @implementation PaypalPaymentService
+-(void)processPaymentAmount:(NSString*)amount{
+    NSLog(@"Paypal has processed a payment in the amount of: %@", amount);
+    
+}
+
 
 @end

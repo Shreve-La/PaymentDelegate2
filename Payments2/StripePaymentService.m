@@ -10,7 +10,7 @@
 
 @implementation StripePaymentService
 
--(void)processPaymentAmount:(NSNumber*)amount{
+-(void)processPaymentAmount:(NSString*)amount{
     NSLog(@"Stripe has processed a payment in the amount of: %@", amount);
 
 }

@@ -13,9 +13,9 @@
 
 @implementation PaymentGateway
 
--(void)processPaymentAmount:(NSNumber*)amount{
+-(void)processPaymentAmount:(NSString*)amount{
     NSLog(@"Payment Processing Request Recieved, Sending to Delegate");
-    [self.delegate processPaymentAmount:(NSNumber*)amount];
+    [self.delegate processPaymentAmount:(NSString*)amount];
 
 }
 

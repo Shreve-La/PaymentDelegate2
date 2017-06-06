@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
         AmazonPaymentService *amazonPaymentService = [[AmazonPaymentService alloc] init];
         
         //Amount Generator & Price Formatter
-        NSNumber *randomNum = [NSNumber numberWithInt:(arc4random_uniform(1000000)+1)];
+        NSNumber *randomNum = [NSNumber numberWithInt:(arc4random_uniform(1000000000000)+1)];
         NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
         [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
         NSString *dollarAmount = [formatter stringFromNumber:randomNum];
@@ -33,8 +33,17 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Your total is: %@ \n Would you like to pay with:\n 1: Paypal 2: Stripe 3: Amazon", dollarAmount);
         //Request User Input
         NSString *chosenGateway = [inputhandler getInput];
-        paymentGateway.delegate = stripePaymentService;
-        [paymentGateway processPaymentAmount:randomNum];
+        if ([chosenGateway containsString:@"2"]){
+            paymentGateway.delegate = stripePaymentService;
+            }
+        if ([chosenGateway containsString:@"1"]){
+            paymentGateway.delegate = payPalPaymentService;
+        }
+        if ([chosenGateway containsString:@"3"]){
+            paymentGateway.delegate = amazonPaymentService;
+        }
+        
+        [paymentGateway processPaymentAmount:dollarAmount];
 
         
         

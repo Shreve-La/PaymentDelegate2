@@ -10,4 +10,11 @@
 
 @implementation AmazonPaymentService
 
+-(void)processPaymentAmount:(NSString*)amount{
+    NSLog(@"Amazon has processed a payment in the amount of: %@", amount);
+    
+}
+
+
+
 @end

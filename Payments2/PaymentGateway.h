@@ -10,7 +10,7 @@
 
 @protocol PaymentProtocol <NSObject>
 
--(void)processPaymentAmount:(NSNumber*)amount;
+-(void)processPaymentAmount:(NSString*)amount;
 
 @end
 
@@ -19,6 +19,6 @@
 
 @property (nonatomic, weak) id<PaymentProtocol> delegate;
 
--(void)processPaymentAmount:(NSNumber*)amount;
+-(void)processPaymentAmount:(NSString*)amount;
 
 @end
